@@ -1,0 +1,3 @@
+[submodule "libtasn1"]
+	path = libtasn1
+	url = git@github.com:everappz/libtasn1.git
