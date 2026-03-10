@@ -39,7 +39,7 @@
 #include <stddef.h>
 #include <stdbool.h>
 
-#include <libtasn1.h>
+#include "libtasn1.h"
 
 #if !defined _WIN32
 # include <netinet/ip.h>
