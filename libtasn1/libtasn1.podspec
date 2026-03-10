@@ -26,10 +26,7 @@ Pod::Spec.new do |s|
 
   s.public_header_files = 'lib/libtasn1.h'
 
-  s.header_mappings_dir = '.'
-  s.header_dir          = 'libtasn1'
-
-  s.pod_target_xcconfig = {
+s.pod_target_xcconfig = {
     'HEADER_SEARCH_PATHS'        => '"${PODS_TARGET_SRCROOT}/lib" "${PODS_TARGET_SRCROOT}"',
     'GCC_PREPROCESSOR_DEFINITIONS' => 'HAVE_CONFIG_H=1',
     'GCC_C_LANGUAGE_STANDARD'    => 'gnu99',

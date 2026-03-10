@@ -23,7 +23,12 @@ Pod::Spec.new do |s|
     'contrib/**/*.{c,h}',
     'compat/*.{c,h}',
     'include/**/*.h',
+    'xcode/extra/*.{c,h}',
     'config.h'
+  ]
+
+  s.exclude_files = [
+    'compat/strlcpy.c'
   ]
 
   s.public_header_files = [
@@ -35,7 +40,7 @@ Pod::Spec.new do |s|
   s.header_dir          = 'libdsm'
 
   s.pod_target_xcconfig = {
-    'HEADER_SEARCH_PATHS'          => '"${PODS_TARGET_SRCROOT}/include" "${PODS_TARGET_SRCROOT}/src" "${PODS_TARGET_SRCROOT}/contrib/mdx" "${PODS_TARGET_SRCROOT}/contrib/rc4" "${PODS_TARGET_SRCROOT}/contrib/spnego" "${PODS_TARGET_SRCROOT}/compat" "${PODS_TARGET_SRCROOT}"',
+    'HEADER_SEARCH_PATHS'          => '"${PODS_TARGET_SRCROOT}/include" "${PODS_TARGET_SRCROOT}/src" "${PODS_TARGET_SRCROOT}/contrib/mdx" "${PODS_TARGET_SRCROOT}/contrib/rc4" "${PODS_TARGET_SRCROOT}/contrib/spnego" "${PODS_TARGET_SRCROOT}/compat" "${PODS_TARGET_SRCROOT}" "${PODS_ROOT}/Headers/Public/libtasn1"',
     'GCC_PREPROCESSOR_DEFINITIONS' => 'HAVE_CONFIG_H=1',
     'GCC_C_LANGUAGE_STANDARD'      => 'gnu99'
   }
