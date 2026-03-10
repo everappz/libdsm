@@ -24,6 +24,7 @@ Pod::Spec.new do |s|
     'compat/*.{c,h}',
     'include/**/*.h',
     'xcode/extra/*.{c,h}',
+    'xcode/config.h',
     'config.h'
   ]
 
