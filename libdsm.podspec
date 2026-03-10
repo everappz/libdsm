@@ -8,10 +8,10 @@ Pod::Spec.new do |s|
     to browse, read, and write files on SMB/CIFS network shares.
   DESC
 
-  s.homepage         = 'https://github.com/leshkoapps/libdsm'
+  s.homepage         = 'https://github.com/everappz/libdsm'
   s.license          = { :type => 'LGPL-2.1', :file => 'COPYING' }
-  s.author           = { 'leshkoapps' => 'https://github.com/leshkoapps' }
-  s.source           = { :git => 'https://github.com/leshkoapps/libdsm.git', :tag => s.version.to_s }
+  s.author           = { 'everappz' => 'https://github.com/everappz' }
+  s.source           = { :git => 'https://github.com/everappz/libdsm.git', :tag => s.version.to_s }
 
   s.ios.deployment_target     = '12.0'
   s.osx.deployment_target     = '10.15'
