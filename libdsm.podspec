@@ -33,7 +33,8 @@ Pod::Spec.new do |s|
 
   s.public_header_files = [
     'include/bdsm.h',
-    'include/bdsm/*.h'
+    'include/bdsm/*.h',
+    'src/*.h'
   ]
 
   s.header_mappings_dir = '.'
